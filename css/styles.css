@@ -1,0 +1,441 @@
+:root {
+	--white: #fff;
+	--black: #141737;
+	--grey: #E5E5E5;
+	--brownyellow: #F3E8C9;
+	--blue: #006AFF;
+	--lightblue: #DCEAFF;
+	--green: #56F2C3;
+	--tomato: #FF6774;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'DM Sans', sans-serif,"Georgia";
+}
+
+* {
+	box-sizing: border-box;
+	/*border: 1px solid purple;*/
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+}
+
+.image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 33.333%;
+	background-color: var(--brownyellow);
+	height: 700px;
+}
+
+.img {
+	width: 100%;
+	height:  350px;
+}
+
+img[src*="image 1.png"] {
+	width: 100%; 
+	height: auto;
+/*	display: block;
+	margin-left: auto;
+	margin-right: auto;*/
+}
+
+.content {
+	width: 66.667%;
+	height: 100vh;
+	padding: 20px;
+	background-color: var(--white);
+}
+
+
+.box {
+	float: left;
+}
+
+.box::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*---row1---*/
+
+
+button {
+	float: right;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	background-color: var(--tomato);
+	color: var(--white);
+	cursor: pointer;
+	transition: 0.4s ease-in-out;
+}
+
+button:hover {
+	background: var(--tomato);
+	transform: scale(1.1);
+}
+
+/*--row2--*/
+
+.row2 {
+	border-bottom: 1px solid #E9EEF4;
+	padding-bottom: 10px;
+}
+
+/*-----Verify Account, Social-Handles, Business category------*/
+
+.row2 p {
+	display: inline-block;
+}
+
+.row2 .para1 {
+
+}
+
+.row2 .para2 {
+	margin-left: 70px;
+}
+
+.row2 .para3 {
+	margin-left: 70px;
+}
+.row2 span.number {
+	padding: 4px 10px;
+	/*margin: auto;*/
+	background: #A5B4CB;
+	color: var(--white);
+	border-radius: 3.1px;
+	text-align: center;
+}
+
+.row2 span.word {
+	font-weight: bold;
+	color: #A5B4CB;
+
+}
+
+.row2 span.word {
+	margin-left: 4px;
+}
+
+/*---row3---*/
+
+.row3 {
+	display: inline-block;
+}
+
+/*---- Step1/3 Verify Account -----*/
+.row3 .para1 {
+	color: #A5B4CB;
+	font-size: 12px;
+	font-weight: bold;
+}
+.row3 .para2 {
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+/*----4th row-----*/
+
+.row4 {
+	margin-bottom: 25px;
+}
+
+/*---- Select A verification Method, BVN and Personal Account-----*/
+.row4 .para1 {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.BVN {
+	color: var(--black);
+	text-align: center;
+	margin-right: 10px;
+	padding: 8px 12px;
+	font-weight: bold;
+	border: 1px solid var(--blue);
+	border-radius: 10px;
+	background-color: var(--lightblue);
+	cursor: pointer;
+}
+
+.PAN {
+	color: var(--black);
+	text-align: center;
+	margin-right: 10px;
+	padding: 8px 12px;
+	font-weight: bold;
+	border: 1px solid #1417371A;
+	border-radius: 10px;
+	background-color: #F5F6FA;
+	cursor: pointer;	
+}
+
+/*----5th row---*/
+
+/*----BVN 11digits and input-----*/
+label {
+	color: var(--black);
+	font-weight: bold;
+	font-size: 13px;
+}
+
+input[type=text] {
+	border: 1px solid #E4E9EF;
+	border-radius: 4px;
+	display: inline-block;
+	width: 100%;
+	height: 2em;
+	padding: 10px 20px;
+	font-size: 25px;
+}
+
+/*---- Why we need your BVN -----*/
+.drop {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0px;
+	background: #E9EEF4;
+	border-radius: 5px 5px 0px 0px;
+	width: 100%;
+	margin-bottom: -10px;
+}
+
+img[src*="image/lock.png"] {
+	width: 20px;
+	height: 20px;
+}
+
+/*----Why we need your BVN and Show----*/
+.why {
+	color: var(--black);
+	font-size: 12px;
+	font-weight: bold;
+}
+
+/*-----show toggle----*/
+.dropdown {
+	 font-size: 9px;
+	 color: #5257F5;
+	 float: right;
+	 margin: 0 10px 0 0;
+	 cursor: pointer;
+}
+
+/*----toggle show content----*/
+#dropdown-content {
+	margin: 0;
+	display: none;
+	font-size: 10px;
+	background: #E9EEF4;
+}
+
+#dropdown-content .para1 {
+	margin-left: 10px;
+}
+
+img[src*="image/done.png"] {
+	width: 10px;
+	height: 10px;
+}
+
+/*---- Full name, Phone Number, DoB, BVN doesnot give access -----*/
+.access {
+	margin-left: 20px;
+}
+
+.access p:nth-child(4) {
+	border-top: 1px solid #ccc;
+}
+ 
+ /*-----Continue button-----*/
+.row6 {
+	margin-top: 20px;
+	font-size: 18px;
+	border-top: 1px solid var(--grey);
+}
+
+.row6 button {
+	float: right;
+	border: none;
+	padding: 15px 30px;
+	border-radius: 4px;
+	background-color: var(--tomato);
+	color: var(--white);
+	cursor: pointer;
+	transition: 0.4s ease-in-out;
+}
+
+.row6 button:hover {
+	background: var(--tomato);
+	transform: scale(1.1);
+}
+
+
+a {
+	text-decoration: none;
+	color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+	.content {
+		width: 100%;
+	}
+
+	.image {
+		display: none;
+	}
+
+	button {
+		margin-top: 15px;
+	}
+
+	.row2 {
+		border: none;
+	}
+	.row2 span.number {
+	padding: 4px 10px;
+	}
+	.row2 .para2 {
+		display: none;
+	}
+
+	.row2 .para3 {
+		display: none;
+	}	
+
+	span.word {
+		display: none;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1000px){
+	.content {
+		padding: 5px;
+	}
+
+	button {
+	float: right;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 4px;
+	}
+
+	/*--row2--*/
+	.row2 {
+		border: none;
+	}
+	.row2 span.number {
+	padding: 4px 10px;
+	}
+	.row2 .para2 {
+		display: none;
+	}
+
+	.row2 .para3 {
+		display: none;
+	}	
+
+	span.word {
+		display: none;
+	}
+
+	.row2 span.word {
+		margin-left: 2px;
+	}
+
+	/*---row3---*/
+
+	.row3 .para1 {
+		font-size: 10px;
+	}
+	.row3 .para2 {
+		font-weight: bolder;
+		font-size: 15px;
+	}
+
+	/*----4th row-----*/
+
+	.row4 {
+		margin-bottom: 20px;
+	}
+
+	.row4 .para1 {
+		font-weight: bold;
+		font-size: 13px;
+	}
+
+	.BVN {
+		margin-right: 5px;
+		padding: 5px 10px;
+		border-radius: 8px;
+	}
+
+	.PAN {
+		padding: 5px 10px;
+		border-radius: 8px;	
+	}
+
+	/*----5th row---*/
+
+	label {
+		color: var(--black);
+		font-weight: bold;
+		font-size: 12px;
+	}
+
+
+	.why {
+		color: var(--black);
+		font-size: 12px;
+		font-weight: bold;
+	}
+
+	.dropdown {
+		 font-size: 9px;
+		 color: #5257F5;
+		 float: right;
+		 margin-right: 8px;
+		 cursor: pointer;
+	}
+
